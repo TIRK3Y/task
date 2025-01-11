@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="img/logo.png" alt="Logo">
+    </div>
+    <div class="user-menu">
+      <div class="profile-image">
+        <img src="img/user.jpg" alt="Profile Picture">
+      </div>
+      <span class="user-name" id="user-dropdown-toggle">Test User</span>
+      <i class="fa fa-angle-down dropdown-icon" id="dropdown-icon"></i>
+      <div class="dropdown" id="user-dropdown">
+        <ul>
+          <li><a href="account.html">Account</a></li>
+        </ul>
+      </div>
+      <div class="divider"></div>
+      <div class="logout">
+        <button id="logoutButton">
+          <i class="fa fa-sign-out" aria-hidden="true"></i> Logout
+        </button>
+      </div>
+      
+      
+    </div>
+  </nav>
+
+  <!--Content -->
+  <div class="main-container">
+    <!-- Collapsible Sidebar -->
+    <aside class="sidebar">
+      <ul>
+        <li class="menu-item" title="Dashboard">
+          <i class="fa fa-home menu-icon" aria-hidden="true"></i>
+          <span>Menu 1</span>
+        </li>
+        <li class="menu-item" title="Reports">
+          <i class="fa fa-bar-chart menu-icon" aria-hidden="true"></i>
+          <span>Menu 2</span>
+        </li>
+        <li class="menu-item" title="Settings">
+          <i class="fa fa-cogs menu-icon" aria-hidden="true"></i>
+          <span>Menu 3</span>
+        </li>
+      </ul>
+    </aside>
+
+    <!-- Dashboard -->
+    <main class="dashboard">
+      <div class="dashboard-header">
+        <h1>TestProject</h1>
+      </div>
+      <div class="card-container">
+
+        <!-- Card 1 -->
+        <div class="card">
+            <div class="card-header">
+              <i class="fa fa-graduation-cap card-icon" aria-hidden="true"></i>
+              <div class="divider"></div>
+              <span class="card-user">User: sayedameen_Pro</span>
+              <i class="fa fa-ellipsis-v card-menu" aria-hidden="true" id="card-menu-toggle"></i>
+            </div>
+            <hr>
+            <div class="card-status">
+              <div class="status-left">
+                <span class="status-dot"></span>
+                <span class="status-text">Running</span>
+                <div class="line"></div>
+                <div class="card-description">
+                    <p>Lorem ipsum dolor sit amet. Eum omnis galisum sit earum deserunt aut voluptatibus necessitatibus.</p>
+                    <div class="details-navigation">
+                      <span>Details</span>
+                      <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    </div>
+                  </div>
+              </div>
+              <div class="status-time">
+                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                <span>3.2 hrs</span>
+              </div>
+            </div>
+            <hr>
+            <div class="card-actions">
+              <div class="action-left">
+                <i class="fa fa-play-circle action-icon green" aria-hidden="true"></i>
+                <div class="divider"></div>
+                <i class="fa fa-stop-circle action-icon red" aria-hidden="true"></i>
+              </div>
+            </div>
+  
+            <!-- Card Menu Popup -->
+            <div class="card-menu-popup" id="card-menu-popup">
+              <ul>
+                <li><i class="fa fa-share-alt"></i> Share Project</li>
+                <li><i class="fa fa-copy"></i> Copy Project</li>
+                <li><i class="fa fa-refresh"></i> Refresh</li>
+                <li><i class="fa fa-list"></i> Logs</li>
+                <li><i class="fa fa-edit"></i> Edit</li>
+                <li><i class="fa fa-trash"></i> Delete</li>
+              </ul>
+            </div>
+          </div>
+        
+        <!-- Card 2 -->
+        <div class="card">
+            <div class="card-header">
+              <i class="fa fa-graduation-cap card-icon" aria-hidden="true"></i>
+              <div class="divider"></div>
+              <span class="card-user">User: sayedameen_Pro</span>
+              <i class="fa fa-ellipsis-v card-menu" aria-hidden="true" id="card-menu-toggle"></i>
+            </div>
+            <hr>
+            <div class="card-status">
+              <div class="status-left">
+                <span class="status-reddot"></span>
+                <span class="status-text">Not Running</span>
+                <div class="line"></div>
+                <div class="card-description">
+                    <p>Lorem ipsum dolor sit amet. Eum omnis galisum sit earum deserunt aut voluptatibus necessitatibus.</p>
+                    <div class="details-navigation">
+                      <span>Details</span>
+                      <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    </div>
+                  </div>
+              </div>
+              <div class="status-time">
+                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                <span>3.2 hrs</span>
+              </div>
+            </div>
+            <hr>
+            <div class="card-actions">
+              <div class="action-left">
+                <i class="fa fa-play-circle action-icon green" aria-hidden="true"></i>
+                <div class="divider"></div>
+                <i class="fa fa-stop-circle action-icon red" aria-hidden="true"></i>
+              </div>
+            </div>
+
+          <!-- Card Menu Popup -->
+          <div class="card-menu-popup" id="card-menu-popup">
+  <ul>
+    <li><i class="fa fa-share-alt icon-share"></i> Share Project</li>
+    <li><i class="fa fa-copy icon-copy"></i> Copy Project</li>
+    <li><i class="fa fa-refresh icon-refresh"></i> Refresh</li>
+    <li><i class="fa fa-list icon-logs"></i> Logs</li>
+    <li><i class="fa fa-edit icon-edit"></i> Edit</li>
+    <li><i class="fa fa-trash icon-delete"></i> Delete</li>
+  </ul>
+</div> 
+</div>
+      
+        <!-- Card 3 -->
+        <div class="card">
+            <div class="card-header">
+              <i class="fa fa-graduation-cap card-icon" aria-hidden="true"></i>
+              <div class="divider"></div>
+              <span class="card-user">User: sayedameen_Pro</span>
+              <i class="fa fa-ellipsis-v card-menu" aria-hidden="true" id="card-menu-toggle"></i>
+            </div>
+            <hr>
+            <div class="card-status">
+              <div class="status-left">
+                <span class="status-dot"></span>
+                <span class="status-text">Running</span>
+                <div class="line"></div>
+                <div class="card-description">
+                    <p>Lorem ipsum dolor sit amet. Eum omnis galisum sit earum deserunt aut voluptatibus necessitatibus.</p>
+                    <div class="details-navigation">
+                      <span>Details</span>
+                      <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    </div>
+                  </div>
+              </div>
+              <div class="status-time">
+                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                <span>3.2 hrs</span>
+              </div>
+            </div>
+            <hr>
+            <div class="progress-container">
+                <div class="progress-text">Packages : <span class="progress-status">Downloading packages... 60%</span></div>
+                <div class="progress-bar-container">
+                  <div class="progress-bar" style="width: 60%;"></div>
+                </div>
+              </div>
+              <hr>
+            <div class="card-actions">
+              <div class="action-left">
+                <i class="fa fa-play-circle action-icon green" aria-hidden="true"></i>
+                <div class="divider"></div>
+                <i class="fa fa-stop-circle action-icon red" aria-hidden="true"></i>
+              </div>
+            </div>
+
+    <!-- Card Menu Popup -->
+    <div class="card-menu-popup" id="card-menu-popup">
+        <ul>
+          <li><i class="fa fa-share-alt"></i> Share Project</li>
+          <li><i class="fa fa-copy"></i> Copy Project</li>
+          <li><i class="fa fa-refresh"></i> Refresh</li>
+          <li><i class="fa fa-list"></i> Logs</li>
+          <li><i class="fa fa-edit"></i> Edit</li>
+          <li><i class="fa fa-trash"></i> Delete</li>
+        </ul>
+      </div>
+  </div>
+  
+  <!-- Card 4 -->
+  <div class="card">
+    <div class="card-header">
+      <i class="fa fa-graduation-cap card-icon" aria-hidden="true"></i>
+      <div class="divider"></div>
+      <span class="card-user">User: sayedameen_Pro</span>
+      <i class="fa fa-ellipsis-v card-menu" aria-hidden="true" id="card-menu-toggle"></i>
+    </div>
+    <hr>
+    <div class="card-status">
+      <div class="status-left">
+        <span class="status-reddot"></span>
+        <span class="status-text">Not Running</span>
+        <div class="line"></div>
+        <div class="card-description">
+            <p>Lorem ipsum dolor sit amet. Eum omnis galisum sit earum deserunt aut voluptatibus necessitatibus.</p>
+            <div class="details-navigation">
+              <span>Details</span>
+              <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </div>
+          </div>
+      </div>
+      <div class="status-time">
+        <i class="fa fa-clock-o" aria-hidden="true"></i>
+        <span>3.2 hrs</span>
+      </div>
+    </div>
+    <hr>
+    <div class="progress-container">
+        <div class="progress-text">Packages : <span class="progress-status">Error package demo... 30%</span></div>
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: 30%; background-color: red;"></div>
+        </div>
+      </div>
+      <hr>
+    <div class="card-actions">
+      <div class="action-left">
+        <i class="fa fa-play-circle action-icon green" aria-hidden="true"></i>
+        <div class="divider"></div>
+        <i class="fa fa-stop-circle action-icon red" aria-hidden="true"></i>
+      </div>
+    </div>
+
+    <!-- Card Menu Popup -->
+    <div class="card-menu-popup" id="card-menu-popup">
+        <ul>
+          <li><i class="fa fa-share-alt"></i> Share Project</li>
+          <li><i class="fa fa-copy"></i> Copy Project</li>
+          <li><i class="fa fa-refresh"></i> Refresh</li>
+          <li><i class="fa fa-list"></i> Logs</li>
+          <li><i class="fa fa-edit"></i> Edit</li>
+          <li><i class="fa fa-trash"></i> Delete</li>
+        </ul>
+      </div>
+  </div>
+</main>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
